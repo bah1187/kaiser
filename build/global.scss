@@ -17,93 +17,72 @@
 custom fonts
 ================================================================= */
 
-// @font-face{
-// 	font-family:TradeGothicLTCom-Bold;
-// 	src:url(../fonts/2D0A1D_0_0.eot);
-// 	src:url(../fonts/2D0A1D_0_0.eot?#iefix) format("embedded-opentype"),
-// 	url(../fonts/2D0A1D_0_0.woff2) format("woff2"),
-// 	url(../fonts/2D0A1D_0_0.woff) format("woff"),
-// 	url(../fonts/2D0A1D_0_0.ttf) format("truetype");
-// 	font-weight:700
-// }
-// @font-face{
-// 	font-family:TradeGothicLTCom;
-// 	src:url(../fonts/2D0A1D_1_0.eot);
-// 	src:url(../fonts/2D0A1D_1_0.eot?#iefix) format("embedded-opentype"),
-// 	url(../fonts/2D0A1D_1_0.woff2) format("woff2"),
-// 	url(../fonts/2D0A1D_1_0.woff) format("woff"),
-// 	url(../fonts/2D0A1D_1_0.ttf) format("truetype")
-// }
-// @font-face{font-family:TradeGothicLTCom-BdCn20;
-// 	src:url(../fonts/2D0A1D_2_0.eot);
-// 	src:url(../fonts/2D0A1D_2_0.eot?#iefix) format("embedded-opentype"),
-// 	url(../fonts/2D0A1D_2_0.woff2) format("woff2"),
-// 	url(../fonts/2D0A1D_2_0.woff) format("woff"),
-// 	url(../fonts/2D0A1D_2_0.ttf) format("truetype");
-// 	font-weight:700
-// }
-// @font-face{font-family:chipotle;
-// 	src:url(../fonts/chipotle.eot);
-// 	src:url(../fonts/chipotle.woff) format("woff"),
-// 	url(../fonts/chipotle.ttf) format("truetype"),
-// 	url(../fonts/chipotle.svg) format("svg");
-// 	font-weight:400;font-style:normal;
-//
-// }
-// @font-face {
-//   font-family: 'icomoon';
-//   src: url("../fonts/icomoon.eot?57pmfu");
-//   src: url("../fonts/icomoon.eot?#iefix57pmfu") format("embedded-opentype"), url("../fonts/icomoon.woff?57pmfu") format("woff"), url("../fonts/icomoon.ttf?57pmfu") format("truetype"), url("../fonts/icomoon.svg?57pmfu#icomoon") format("svg");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//     font-family: 'Nunito Sans';
-//     src: url('../fonts/NunitoSans-Light.eot');
-//     src: url('../fonts/NunitoSans-Light.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/NunitoSans-Light.woff2') format('woff2'),
-//         url('../fonts/NunitoSans-Light.woff') format('woff'),
-//         url('../fonts/NunitoSans-Light.ttf') format('truetype');
-//     font-weight: 300;
-//     font-style: normal;
-// }
-//
-// @font-face {
-//     font-family: 'Nunito Sans';
-//     src: url('../fonts/NunitoSans-Regular.eot');
-//     src: url('../fonts/NunitoSans-Regular.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/NunitoSans-Regular.woff2') format('woff2'),
-//         url('../fonts/NunitoSans-Regular.woff') format('woff'),
-//         url('../fonts/NunitoSans-Regular.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-//
-// @font-face {
-//     font-family: 'Nunito Sans';
-//     src: url('../fonts/NunitoSans-Bold.eot');
-//     src: url('../fonts/NunitoSans-Bold.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/NunitoSans-Bold.woff2') format('woff2'),
-//         url('../fonts/NunitoSans-Bold.woff') format('woff'),
-//         url('../fonts/NunitoSans-Bold.ttf') format('truetype');
-//     font-weight: bold;
-//     font-style: normal;
-// }
-//
-// [class*=" icon-"],
-// [class^=icon-]{
-// 	font-family:chipotle;
-// 	speak:none;
-// 	font-style:normal;
-// 	font-weight:400;
-// 	font-variant:normal;
-// 	text-transform:none;
-// 	line-height:1;
-// 	-webkit-font-smoothing:antialiased;
-// 	-moz-osx-font-smoothing:grayscale
-// }
 
+// @import url("../FULL_v2_0/fonts/583384/0185CADA2B701BA24.css");
+// @import url("../FULL_v2_0/fonts/583384/11C7C9D9DC8DBDC09.css");
+// @import url("../FULL_v2_0/fonts/583384/70E4929B94CDE0DE6.css");
+
+@import url("https://tbcdn.talentbrew.com/company/641/v3_0/fonts/583384/0185CADA2B701BA24.css");
+@import url("https://tbcdn.talentbrew.com/company/641/v3_0/fonts/583384/11C7C9D9DC8DBDC09.css");
+@import url("https://tbcdn.talentbrew.com/company/641/v3_0/fonts/583384/70E4929B94CDE0DE6.css");
+
+
+%GothamLight {
+font-family: Gotham A, Gotham B;
+font-weight: 300;
+font-style: normal;
+}
+
+%GothamLightItalic {
+font-family: Gotham A, Gotham B;
+font-weight: 300;
+font-style: italic;
+}
+
+%GothamBook {
+font-family: Gotham A, Gotham B;
+font-weight: 400;
+font-style: normal;
+}
+
+%GothamBookItalic {
+font-family: Gotham A, Gotham B;
+font-weight: 400;
+font-style: italic;
+}
+
+%GothamMedium {
+font-family: Gotham A, Gotham B;
+font-weight: 500;
+font-style: normal;
+}
+
+%GothamMediumItalic {
+font-family: Gotham A, Gotham B;
+font-weight: 500;
+font-style: italic;
+}
+
+%GothamBold {
+font-family: Gotham A, Gotham B;
+font-weight: 700;
+font-style: normal;
+}
+
+%GothamBoldItalic{
+font-family: Gotham A, Gotham B;
+font-weight: 700;
+font-style: italic;
+}
+
+
+//  Weight name mapping
+
+$weight-light: 300; // Light
+$weight-normal: 400; // Normal (just use 'normal' instead of a number)
+$weight-medium: 500; // Medium
+$weight-semi-bold: 600; // Semi Bold (Demi Bold)
+$weight-bold: 700; // Bold (just use 'bold' instead of a number)
 
 
 /* =================================================================
@@ -114,7 +93,7 @@ $end-small: 800px;
 $max-width: 1000px;
 
 // Colors
-$primary: #000;
+$primary: #0078b3;
 $primary-contrast: #fff;
 $accent: #ccc;
 $text: #000;
@@ -126,9 +105,8 @@ $line-height: 1.25;
 $reset-line-height: 1;
 
 //Fonts
-$base-font: 'Helvetica', sans-serif;
-$font-heavy: 'Nunito Sans bold', sans-serif;
-$font-medium: 'Nunito Sans med', sans-serif;
+$base-font: Gotham A, Gotham B, Arial, Helvetica, sans-serif;
+
 
 /* =================================================================
 extends
@@ -306,10 +284,19 @@ body {
     padding: 0;
     color: $text;
     font-size: px(16);
+    font-weight: $weight-normal;
 
     @include breakpoint($end-small) {
         font-size: px(18);
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-family: Gotham A, Gotham B, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 a {
@@ -521,6 +508,148 @@ aside {
 Header & Navigation
 ================================================================= */
 
+.header {
+
+  padding: 20px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+}
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+
+  &.open {
+    display: block;
+  }
+
+
+  &__title {
+    background: $primary;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-weight: $weight-medium;
+    position: relative;
+
+      h2 {
+        color: #fff;
+      }
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    text-indent: -999999em;
+    font-size: 0;
+
+    &:after {
+      content: "\00D7";
+      font-size: 34px;
+      width: 20px;
+      height: 20px;
+      color: #fff;
+    }
+
+  }
+
+  &__button {
+    text-indent: -99999em;
+    width: 40px;
+    height: 32px;
+    font-size: 0;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #6c6c6c;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+  }
+
+  &__list {
+    padding: 0 20px;
+  }
+
+  &__item {
+
+
+    &--toggle {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #dfdfdf;
+      padding: 10px 0;
+      font-weight: $weight-medium;
+      color: #545454;
+      text-align: left;
+      position: relative;
+
+      &:after {
+        display: inline-block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        transform: rotate(-135deg);
+        background: transparent;
+        text-indent: -9999px;
+        border-top: 2px solid $primary;
+        border-left: 2px solid $primary;
+        transition: all 250ms ease-in-out;
+        text-decoration: none;
+        color: transparent;
+        content: " ";
+        right: 0;
+        top: 15px;
+      }
+    }
+  }
+
+  &__sub-list {
+    display: none;
+
+    &--item {
+
+
+    }
+
+    &--link {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #dfdfdf;
+      padding: 10px 0;
+      color: $primary;
+      font-weight: $weight-medium;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 10px 0;
+    font-weight: $weight-medium;
+    color: #545454;
+    text-align: left;
+  }
+
+
+}
+
+
+
 
 /* =================================================================
 site selector
@@ -558,8 +687,37 @@ site selector
 /* =================================================================
 search form
 ================================================================= */
+
+.search-toggle {
+  flex: 100%;
+  background: $primary;
+  color: #fff;
+  padding: 10px;
+  margin: 0 -20px;
+
+  &:after {
+    display: inline-block;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    transform: rotate(-135deg);
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    color: transparent;
+    content: " ";
+    left: 10px;
+    top: -3px;
+
+  }
+}
+
 .search-form {
     clear: both;
+    display: none;
 
     p {
         margin: 0 1em .7em 0;
