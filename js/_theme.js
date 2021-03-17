@@ -80,11 +80,12 @@ global variables
 
           $('.js-nav-close').click(function(){
               $('.navigation').removeClass('open');
-            });
+          });
 
-            $('.js-sub-nav-button').click(function(){
-                $(this).parent().next('.js-sub-nav').slideToggle('fast');
-              });
+          $('.js-sub-nav-button').click(function(){
+                $(this).parent().next().slideToggle('fast');
+                $(".js-sub-nav").not($(this).parent().next()).slideUp('fast');
+          });
 
 
 

@@ -356,6 +356,7 @@ input[type="search"] {
 #page {
     overflow: hidden;
     margin: 0 auto;
+    height: 800px;
 }
 
 b, strong {
@@ -516,6 +517,24 @@ Header & Navigation
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include breakpoint(900px) {
+      flex-wrap: nowrap;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    @include breakpoint(1200px) {
+      align-items: baseline;
+    }
+  }
+
+  .logo {
+    img {
+
+      @include breakpoint(1200px) {
+        width: 300px;
+      }
+    }
   }
 
 }
@@ -528,6 +547,14 @@ Header & Navigation
   top: 0;
   left: 0;
   background: #fff;
+  @include breakpoint(900px) {
+    position: static;
+    display: block !important;
+    max-width: 680px;
+  }
+  @include breakpoint(1200px) {
+    max-width: 750px;
+  }
 
   &.open {
     display: block;
@@ -540,6 +567,9 @@ Header & Navigation
     margin-bottom: 10px;
     font-weight: $weight-medium;
     position: relative;
+    @include breakpoint(900px) {
+      display: none;
+    }
 
       h2 {
         color: #fff;
@@ -568,6 +598,9 @@ Header & Navigation
     width: 40px;
     height: 32px;
     font-size: 0;
+    @include breakpoint(900px) {
+      display: none;
+    }
 
     span {
       display: block;
@@ -581,6 +614,24 @@ Header & Navigation
 
   &__list {
     padding: 0 20px;
+    @include breakpoint(900px) {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding: 0;
+
+    }
+  }
+
+  &__img {
+    display: none;
+    @include breakpoint(900px) {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 
   &__item {
@@ -592,9 +643,18 @@ Header & Navigation
       border-bottom: 1px solid #dfdfdf;
       padding: 10px 0;
       font-weight: $weight-medium;
+      font-size: px(16);
       color: #545454;
       text-align: left;
       position: relative;
+      @include breakpoint(900px) {
+        border-bottom: none;
+        padding: 0;
+        font-size: px(14);
+      }
+      @include breakpoint(1200px) {
+        font-size: px(15);
+      }
 
       &:after {
         display: inline-block;
@@ -612,15 +672,36 @@ Header & Navigation
         content: " ";
         right: 0;
         top: 15px;
+        @include breakpoint(900px) {
+          margin: 0 0 2px 10px;
+          position: static;
+        }
       }
     }
+
+
   }
 
   &__sub-list {
     display: none;
+    @include breakpoint(900px) {
+      position: absolute;
+      top: 39px;
+      width: 100%;
+      max-width: 700px;
+      right: 0;
+      background: #fff;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding: 20px;
+    }
 
     &--item {
 
+      &:first-of-type {
+        @include breakpoint(900px) {
+          float: right;
+        }
+      }
 
     }
 
@@ -632,7 +713,33 @@ Header & Navigation
       color: $primary;
       font-weight: $weight-medium;
       text-align: left;
+      @include breakpoint(900px) {
+        border-bottom: none;
+        font-size: px(14);
+      }
+
     }
+
+    &:nth-of-type(3) {
+
+      .navigation__sub-list--item {
+
+        &:nth-of-type(1) {
+          @include breakpoint(900px) {
+            width: 32%;
+          }
+        }
+
+        &:nth-of-type(2) {
+          @include breakpoint(900px) {
+            float: right;
+            width: 32%;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
   }
 
   &__link {
@@ -641,8 +748,145 @@ Header & Navigation
     border-bottom: 1px solid #dfdfdf;
     padding: 10px 0;
     font-weight: $weight-medium;
+    font-size: px(16);
     color: #545454;
     text-align: left;
+    @include breakpoint(900px) {
+      border-bottom: none;
+      padding: 0;
+      font-size: px(14);
+    }
+    @include breakpoint(1200px) {
+      font-size: px(15);
+    }
+  }
+
+
+}
+
+
+
+
+/* =================================================================
+Footer
+================================================================= */
+
+
+
+footer {
+
+  .footer-inner {
+  margin: 0 auto;
+  background: $primary;
+
+  .footer-logo {
+    margin-bottom: 30px;
+
+
+  }
+
+
+    .footer-links-wrapper {
+      padding: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+
+      @include breakpoint($end-small) {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+
+      .footer-links {
+        list-style: none;
+
+        padding: 0;
+        text-align: center;
+        font-size: px(12);
+        @include clearfix;
+
+
+        // @include localbreak(xsmall) {
+        // width: auto;
+        // }
+        //
+        //  @include localbreak(xxmedium) {
+        //  text-align: left;
+        //  margin: 0;
+        //  }
+        //
+        //  @include localbreak(xlarge) {
+        //   font-size: px(14);
+        //   }
+
+          li {
+            display: inline-block;
+            line-height: .7rem;
+            margin: 0 0 .5rem;
+            text-align: left;
+            width: 50%;
+            float: left;
+
+
+            @include breakpoint($end-small) {
+            text-align: left;
+            border-right: 1px #fff solid;
+            width: auto;
+            float: none;
+            padding: 0 .7rem;
+            line-height: .7rem;
+            }
+
+            &:first-child {
+
+              @include breakpoint($end-small) {
+              padding: 0 .6rem 0 0;
+              }
+
+            }
+
+            &:last-child {
+            border: none;
+            }
+
+            // &:nth-child(even) {
+            // border: none;
+
+            //   @include localbreak(xsmall) {
+            //   border-right: 1px $text solid;
+            //   }
+            // }
+
+            a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+
+                &:hover, &:focus {
+                text-decoration: underline;
+                }
+            }
+          }
+      }
+
+      p {
+      color: #fff;
+      font-size: px(12);
+      margin: 1rem 0 0;
+
+        @include breakpoint($end-small) {
+        text-align: left;
+        }
+
+        // @include localbreak(xlarge) {
+        // font-size: px(14);
+        // }
+      }
+
+    }
+
+
   }
 
 
@@ -693,7 +937,10 @@ search form
   background: $primary;
   color: #fff;
   padding: 10px;
-  margin: 0 -20px;
+  margin: 13px -20px 0;
+  @include breakpoint(900px) {
+    display: none;
+  }
 
   &:after {
     display: inline-block;
